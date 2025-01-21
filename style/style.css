@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* background-image: url(assets/bg.png); */
+    }
+    /* nav and banner style */
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 141px;
+        margin-right: 140px;
+    }
+    .navbar-1{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h3{
+        color: rgb(17, 17, 17);
+        font-size: 32px;
+        font-weight: 700;
+    }
+        /* image style */
+    .image-1{
+        width: 50%;
+    }
+    .intro {
+        display: flex;
+        align-items: center;     
+    }
+    .intro ul{
+        display: flex;
+       padding-right: 150px;      
+    }
+    .intro ul li{     
+        list-style: none;  
+        margin: 20px;           
+    }
+    .intro li a{
+        text-decoration: none;
+    }
+    .home{
+        color: rgb(254, 163, 1);
+        font-size: 20px;
+        font-weight: 700;     
+    }
+    .about{
+        color: rgb(1, 172, 253);
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .facilities{
+        color: rgb(5, 212, 223);
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .admission{
+        color: rgb(93, 88, 239);
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .btn-primary{
+        padding: 10px 30px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 12px;
+        background: rgb(254, 163, 1);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+      /* bannaer section style */
+      .banner{
+        margin-left: 141px;
+        margin-right: 140px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .banner-title{
+        font-size: 56px;
+        font-weight: 700;
+        gap: 24;
+      }
+      .span-1{
+        color: rgb(254, 163, 1);
+      }
+      .span-2{
+        color: rgb(1, 172, 253);
+      }
+      .banner-description{
+        color: rgb(17, 17, 17);
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .btn{
+        padding: 10px 30px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 12px;
+        background: rgb(17, 17, 17);
+        color: rgb(255, 255, 255);
+      }
+      /* responsive media query */
+      @media screen and (max-width: 576px) {
+        .navbar{
+           flex-direction: column;
+        }
+        .navbar-1{
+          flex-direction: column;
+        }
+        .intro ul{
+            flex-direction: column;
+        }
+        .btn-primary{
+            display: block;
+        }
+        .banner{
+            flex-direction:column-reverse;
+        }
+      }
