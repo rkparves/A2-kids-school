@@ -13,9 +13,27 @@
     }
     .body-width{
       width: 1440px;
-      height: 1018.02px;
+      /* height: 1018.02px; */
+      height: 1020px;
       margin: 0 auto;
     }
+        /* image style */
+      .image-1{
+          width: 50%;
+      }
+      .image-2{
+         display: grid;
+         justify-content: center;
+         align-items: center;
+         padding: 52px;
+      }
+      .image-3{
+         border-radius: 16px 16px 0px 0px;
+      }
+      .logo{
+        display: flex;
+        align-items: center;
+      }
     /* nav and banner style */
     .navbar{
         display: flex;
@@ -33,21 +51,7 @@
         color: rgb(17, 17, 17);
         font-size: 32px;
         font-weight: 700;
-    }
-        /* image style */
-    .image-1{
-        width: 50%;
-    }
-    .image-2{
-       display: grid;
-       justify-content: center;
-       align-items: center;
-       padding: 52px;
-    }
-    .image-3{
-       border-radius: 16px 16px 0px 0px;
-    }
-       
+    }    
     .intro {
         display: flex;
         align-items: center;  
@@ -165,8 +169,7 @@
       }
       .section-title{
         width: 460.61px;
-        height: 57.5px;
-        margin: 60px auto;
+        margin: 0 auto;
         display: grid;
         justify-items: center;
         padding: 60px 0px 60px 0px;
@@ -257,7 +260,8 @@
       justify-content: center;
       align-items: center;
       width: 1160px;
-      margin: 50px auto;
+      margin: 0 auto;
+      padding-top: 50px;
       gap: 10px;
      }
      .btn-2{
@@ -373,12 +377,68 @@
         height: 50px;
         margin: 20px auto;
       }
-
-
+      /* footer section style */
+      footer{
+        width: 1439px;
+        height: 519px;
+        margin: 0 auto;
+        background: rgb(1, 172, 253);
+      }
+      .section-container{
+        width: 1160px;
+        height: 481.5px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .container-1 h3{
+        color: rgb(255, 255, 255);
+        font-family: Quicksand;
+        font-size: 42.14px;
+        font-weight: 600;
+        line-height: 39.51px;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+      .container-1 p{
+        color: rgb(255, 255, 255);
+        font-family: Quicksand;
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 20px;
+      }
+      .container-2 h4{
+        color: rgb(255, 255, 255);
+        font-family: Quicksand;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+      .container-2 ul{
+        list-style: none;
+        margin-top: 20px;
+      }
+      .container-2 ul li{
+        color: rgb(255, 255, 255);
+        font-family: Quicksand;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .container-3 h4{
+        color: rgb(255, 255, 255);
+        font-family: Quicksand;
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 90px;
+      }
+      .last-image-container a img{
+      }
      
      /* responsive media query */
      @media screen and (max-width: 576px) {
-      .skills-container{
+      .skills-container,
+      .section-container{
         flex-direction: column;        
       }
       .hide{
